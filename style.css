@@ -1,0 +1,98 @@
+:root {
+    --graybg: #141414;
+    --graycard: #1F1F1F;
+    --graybtn: #333333;
+    --green: #C4F82A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--graybg);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+a, a:visited, a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    background-color: var(--graycard);
+    border-radius: 12px;
+    padding: 40px;
+    width: 385px;
+    margin: auto;
+    text-align: center;
+}
+
+.container h1 {
+    font-weight: bold;
+    margin: 24px 0 4px 0;
+}
+
+.container img {
+    width: 88px;
+    border-radius: 999px;
+}
+
+.container .location {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.container li {
+    background-color: var(--graybtn);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.container li:hover {
+    background-color: var(--green);
+    transition: background-color 600ms ease-in-out;
+}
+
+.container li:hover a {
+    color: var(--graybg);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--graybtn);
+}
+.attribution a {
+    color: var(--graybtn);
+}
+
+@media screen and (max-width: 799px) {
+    .container {
+        width: 456px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 100%;
+    }
+}
